@@ -1,0 +1,1493 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Slab:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .container .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .navbar h2 {
+    padding: 8px;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container .navbar .nav ul li a {
+    margin-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+    padding: 0.1rem 1rem;
+    transition: color 0.25s;
+  }
+  .container .navbar .nav ul li a a::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgb(39, 39, 105);
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 5px;
+  }
+  .container .navbar .nav ul li a a:hover {
+    color: #fff;
+  }
+  .container .navbar .nav ul li a a:hover::after {
+    scale: 1 1;
+  }
+  .container section {
+    width: 100%;
+    height: 90vh;
+  }
+  .container section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container section .row .para {
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+  }
+  .container section .row .para h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 60px;
+  }
+  .container section .row .para p {
+    font-family: "Roboto Slab", serif;
+  }
+  .container section .row .img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .container section .row .img1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .container-profile {
+    width: 100%;
+    height: 100vh;
+  }
+  .container-profile section {
+    height: 100vh;
+    background-image: linear-gradient(white, rgb(142, 182, 197) 80%);
+  }
+  .container-profile section .row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+  .container-profile section .row1 .second-img {
+    justify-content: center;
+    width: 100px;
+    height: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    border: 6px solid rgb(37, 40, 129);
+    border-style: double;
+    display: block;
+    margin: auto;
+  }
+  .container-profile section .row1 .profile {
+    max-width: 320px;
+    border-radius: 7px;
+    height: 30px;
+  }
+  .container-profile section .row1 .profile h1 {
+    font-family: "Sour Gummy", sans-serif;
+  }
+  .container-profile section .row1 .profile p {
+    text-indent: 20px;
+    line-height: 1.5;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-profile section .box {
+    display: flex;
+    height: 45vh;
+    gap: 8px;
+    justify-content: space-evenly;
+    align-items: end;
+    margin: 10px;
+  }
+  .container-profile section .box .box-1 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(249, 41, 75);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-profile section .box .box-2 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(78, 108, 243);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-profile section .box .box-3 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(220, 232, 48);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-profile section .box .box-4 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(129, 34, 224);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-skills {
+    background-image: linear-gradient(45deg, rgb(142, 182, 197) 50%, rgb(11, 11, 90) 50%);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-skills .web {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-skills .web .web-title {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    margin: 7px;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 {
+    display: flex;
+    gap: 7px;
+  }
+  .container-skills .web .row1 .card-1 {
+    margin: 8px;
+    margin-top: 7px;
+    padding: 10px;
+    width: 300px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    line-height: 1.8;
+    border-radius: 5px;
+  }
+  .container-skills .web .row1 .card-1 h2 {
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 .card-1 p {
+    text-indent: 30px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-skills .web .row1 .card-1 button {
+    padding: 6px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(33, 33, 114);
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+  .container-skills .web .row1 .card-1 button a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .container-skills .web .row1 .card-2 {
+    margin: 8px;
+    margin-top: 7px;
+    padding: 10px;
+    width: 300px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    line-height: 1.8;
+    border-radius: 5px;
+  }
+  .container-skills .web .row1 .card-2 h2 {
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 .card-2 p {
+    text-indent: 30px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-skills .web .row1 .card-2 button {
+    padding: 6px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(33, 33, 114);
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+  .container-skills .web .row1 .card-2 button a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .container-skills .java .js {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .java .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 28vh;
+  }
+  .container-skills .java .row2 .weather {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/weather.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .weather .weather-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .weather .weather-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .to-do-list {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    background-image: url(/First-pg/to-do-list.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .to-do-list .to-do-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .to-do-list .to-do-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .quiz-app {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/quiz.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .quiz-app .quiz-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .quiz-app .quiz-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .random-app {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/random-pw.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .random-app .random-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .random-app .random-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .note-app {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/note-app.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .note-app .note-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .note-app .note-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .game {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/game.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .game .game-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .game .game-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .on-off {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/on-off.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .on-off .on-off-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .on-off .on-off-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  footer .total {
+    display: flex;
+    padding: 17px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+  }
+  footer .total h2 {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  footer .total .icon {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .container .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .navbar h2 {
+    padding: 8px;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container .navbar .nav ul li a {
+    margin-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+    padding: 0.1rem 1rem;
+    transition: color 0.25s;
+  }
+  .container .navbar .nav ul li a a::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgb(39, 39, 105);
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 5px;
+  }
+  .container .navbar .nav ul li a a:hover {
+    color: #fff;
+  }
+  .container .navbar .nav ul li a a:hover::after {
+    scale: 1 1;
+  }
+  .container section {
+    width: 100%;
+    height: 90vh;
+  }
+  .container section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container section .row .para {
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+  }
+  .container section .row .para h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 60px;
+  }
+  .container section .row .para p {
+    font-family: "Roboto Slab", serif;
+  }
+  .container section .row .img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .container section .row .img1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .container-profile {
+    width: 100%;
+    height: 100vh;
+  }
+  .container-profile section {
+    height: 100vh;
+    background-image: linear-gradient(white, rgb(142, 182, 197) 80%);
+  }
+  .container-profile section .row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+  }
+  .container-profile section .row1 .second-img {
+    justify-content: center;
+    width: 160px;
+    height: 230px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    border: 6px solid rgb(37, 40, 129);
+    border-style: double;
+    display: block;
+    margin: auto;
+  }
+  .container-profile section .row1 .profile {
+    max-width: 430px;
+    border: 0;
+    border-radius: 7px;
+  }
+  .container-profile section .row1 .profile h1 {
+    font-family: "Sour Gummy", sans-serif;
+  }
+  .container-profile section .row1 .profile p {
+    text-indent: 20px;
+    line-height: 1.5;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-profile section .box {
+    height: 50vh;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+    justify-content: center;
+    padding-bottom: 20px;
+    align-items: end;
+  }
+  .container-profile section .box .box-1 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(249, 41, 75);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin: 10px;
+  }
+  .container-profile section .box .box-2 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(78, 108, 243);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  .container-profile section .box .box-3 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(220, 232, 48);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  .container-profile section .box .box-4 {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(129, 34, 224);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin: 10px;
+  }
+  .container-skills {
+    background-image: linear-gradient(45deg, rgb(142, 182, 197) 50%, rgb(11, 11, 90) 50%);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-skills .web {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-skills .web .web-title {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    margin: 7px;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .container-skills .web .row1 .card-1 {
+    margin: 8px;
+    margin-top: 7px;
+    padding: 10px;
+    width: 300px;
+    height: 248px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    line-height: 1.8;
+    border-radius: 5px;
+  }
+  .container-skills .web .row1 .card-1 h2 {
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 .card-1 p {
+    text-indent: 30px;
+    margin-bottom: 5px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-skills .web .row1 .card-1 button {
+    padding: 8px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(33, 33, 114);
+    color: #fff;
+    margin-top: 4px;
+  }
+  .container-skills .web .row1 .card-1 button a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .container-skills .web .row1 .card-2 {
+    margin: 8px;
+    margin-top: 7px;
+    padding: 10px;
+    width: 300px;
+    height: 248px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    line-height: 1.8;
+    border-radius: 5px;
+  }
+  .container-skills .web .row1 .card-2 h2 {
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 .card-2 p {
+    text-indent: 30px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-skills .web .row1 .card-2 button {
+    padding: 8px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(33, 33, 114);
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+  .container-skills .web .row1 .card-2 button a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .container-skills .java .js {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .java .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    height: 51vh;
+  }
+  .container-skills .java .row2 .weather {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/weather.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .weather .weather-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .weather .weather-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .to-do-list {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    background-image: url(/First-pg/to-do-list.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .to-do-list .to-do-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .to-do-list .to-do-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .quiz-app {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/quiz.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .quiz-app .quiz-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .quiz-app .quiz-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .random-app {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/random-pw.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .random-app .random-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .random-app .random-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .note-app {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/note-app.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .note-app .note-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .note-app .note-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .game {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/game.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .game .game-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .game .game-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  .container-skills .java .row2 .on-off {
+    margin: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(/First-pg/on-off.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+  .container-skills .java .row2 .on-off .on-off-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .container-skills .java .row2 .on-off .on-off-icon a {
+    text-decoration: none;
+    color: #000;
+  }
+  footer .total {
+    display: flex;
+    padding: 17px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+  }
+  footer .total h2 {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  footer .total .icon {
+    margin-right: 5px;
+  }
+}
+.container .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.container .navbar h2 {
+  padding: 10px;
+  margin-left: 10px;
+}
+.container .navbar .nav ul {
+  display: flex;
+  margin-left: 10px;
+}
+.container .navbar .nav ul li {
+  font-size: 18px;
+  list-style: none;
+  padding: 10px;
+}
+.container .navbar .nav ul li a {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+  padding: 0.5rem 1rem;
+  transition: color 0.25s;
+}
+.container .navbar .nav ul li a::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgb(24, 26, 94);
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.45s;
+  border-radius: 5px;
+}
+.container .navbar .nav ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+.container .navbar .nav ul li a:hover::after {
+  scale: 1 1;
+}
+
+.container {
+  background-image: linear-gradient(135deg, rgb(142, 182, 197) 50%, rgb(11, 11, 90) 50%);
+  position: relative;
+}
+.container section .row {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container section .row .para {
+  justify-content: center;
+  line-height: 1.7;
+  color: #080909;
+}
+.container section .row .para h1 {
+  font-size: 30px;
+}
+.container section .row .para h4 {
+  font-size: 20px;
+}
+.container section .row .img1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2.5px solid rgb(255, 255, 255);
+  box-shadow: 0 10px 10px lightblue;
+}
+.container section .row .img1:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .container .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .navbar h2 {
+    padding: 10px;
+    margin-left: 10px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container .navbar .nav ul {
+    display: flex;
+    margin-left: 10px;
+  }
+  .container .navbar .nav ul li {
+    font-size: 18px;
+    list-style: none;
+    padding: 10px;
+  }
+  .container .navbar .nav ul li a {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    transition: color 0.25s;
+  }
+  .container .navbar .nav ul li a::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgb(201, 201, 207);
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 5px;
+  }
+  .container .navbar .nav ul li a:hover {
+    color: #000;
+    z-index: 1;
+  }
+  .container .navbar .nav ul li a:hover::after {
+    scale: 1 1;
+  }
+  .position-relative .row .para h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 80px;
+  }
+  .position-relative .row .para p {
+    font-family: "Roboto Slab", serif;
+  }
+  .container-profile section {
+    padding-bottom: 100px;
+    height: 100vh;
+    background-image: linear-gradient(white, rgb(142, 182, 197) 80%);
+  }
+  .container-profile section .row1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 40px;
+    height: 400px;
+    flex-direction: row;
+  }
+  .container-profile section .row1 .second-img {
+    width: 200px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid rgb(37, 40, 129);
+  }
+  .container-profile section .row1 .profile {
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .container-profile section .row1 .profile h1 {
+    font-size: 30px;
+    line-height: 2;
+    font-family: "Sour Gummy", sans-serif;
+  }
+  .container-profile section .row1 .profile p {
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    line-height: 2;
+    text-indent: 30px;
+  }
+  .container-profile section .box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    margin-bottom: 90px;
+  }
+  .container-profile section .box .box-1 {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(249, 41, 75);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-profile section .box .box-1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .container-profile section .box .box-2 {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(78, 108, 243);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-profile section .box .box-2 .icon2 {
+    transform: scale(6);
+  }
+  .container-profile section .box .box-2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .container-profile section .box .box-3 {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(220, 232, 48);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-profile section .box .box-3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .container-profile section .box .box-4 {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(129, 34, 224);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .container-profile section .box .box-4:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .container-skills {
+    background-image: linear-gradient(45deg, rgb(142, 182, 197) 50%, rgb(11, 11, 90) 50%);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-skills .web {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-skills .web .web-title {
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    margin: 10px;
+    font-family: "Sour Gummy", sans-serif;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 {
+    display: flex;
+    gap: 20px;
+  }
+  .container-skills .web .row1 .card-1 {
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 300px;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    line-height: 1.8;
+    border-radius: 5px;
+  }
+  .container-skills .web .row1 .card-1 h2 {
+    margin-bottom: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 .card-1 p {
+    text-indent: 30px;
+    margin-bottom: 5px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-skills .web .row1 .card-1 button {
+    padding: 8px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(33, 33, 114);
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+  .container-skills .web .row1 .card-1 button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .container-skills .web .row1 .card-2 {
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 300px;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    line-height: 1.8;
+    border-radius: 5px;
+  }
+  .container-skills .web .row1 .card-2 h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .container-skills .web .row1 .card-2 p {
+    text-indent: 30px;
+    margin-bottom: 5px;
+    font-family: "Roboto Slab", serif;
+  }
+  .container-skills .web .row1 .card-2 button {
+    padding: 8px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(33, 33, 114);
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+  .container-skills .web .row1 .card-2 button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .java .js {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgb(36, 88, 141);
+  }
+  .java .row2 {
+    display: flex;
+    gap: 10px;
+    height: 32vh;
+  }
+  .java .row2 .weather {
+    background-image: url(/First-pg/weather.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+    border-radius: 5px;
+    border: 3px solid white;
+  }
+  .java .row2 .weather .weather-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .java .row2 .weather .weather-icon a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  .java .row2 .to-do-list {
+    background-image: url(/First-pg/to-do-list.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .java .row2 .to-do-list .to-do-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .java .row2 .to-do-list .to-do-icon a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  .java .row2 .quiz-app {
+    background-image: url(/First-pg/quiz.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .java .row2 .quiz-app .quiz-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .java .row2 .quiz-app .quiz-icon a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  .java .row2 .random-app {
+    background-image: url(/First-pg/random-pw.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .java .row2 .random-app .random-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .java .row2 .random-app .random-icon a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  .java .row2 .note-app {
+    background-image: url(/First-pg/note-app.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .java .row2 .note-app .note-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .java .row2 .note-app .note-icon a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  .java .row2 .game {
+    background-image: url(/First-pg/game.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .java .row2 .game .game-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .java .row2 .game .game-icon a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  .java .row2 .on-off {
+    background-image: url(/First-pg/on-off.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 160px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .java .row2 .on-off .on-off-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(130, 189, 238);
+    border: 1px solid black;
+  }
+  .java .row2 .on-off .on-off-icon a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  footer .total {
+    display: flex;
+    padding: 15px;
+  }
+  footer .total h2 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.custom-shape-divider-bottom-1731341525 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1731341525 svg {
+  position: relative;
+  display: block;
+  width: calc(123% + 1.3px);
+  height: 56px;
+}
+
+.custom-shape-divider-bottom-1731341525 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1731341525 svg {
+  position: relative;
+  display: block;
+  width: calc(123% + 1.3px);
+  height: 56px;
+}
+
+.custom-shape-divider-bottom-1731341525 .shape-fill {
+  fill: #FFFFFF;
+}/*# sourceMappingURL=Style1.css.map */
